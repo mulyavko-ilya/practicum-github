@@ -116,10 +116,10 @@ git log --oneline
 
 ```mermaid
   graph LR;
-      untracked -- git add --> staged + tracked;
-      modified -- git add -->staged + tracked;
-      staged + tracked -- git commit -->tracked;
-      tracked -->staged + tracked;
+      A(untracked) -- git add --> C(staged + tracked);
+      B(modified) -- git add -->C(staged + tracked);
+      C(staged + tracked) -- git commit -->D(tracked);
+      D(tracked) -->B(staged + tracked);
 ```
 
 
