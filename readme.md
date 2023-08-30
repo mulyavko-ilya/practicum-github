@@ -113,6 +113,16 @@ git log --oneline
 
 ![Жизненный цикл файла](images/lifecycle-file.png)
 
+
+```mermaid
+  graph LR;
+      untracked -- git add --> staged + tracked;
+      modified -- git add -->staged + tracked;
+      staged + tracked -- git commit -->tracked;
+      C-->D;
+```
+
+
 Важное
 
 - Статусом *untracked* помечается файл, о существовании которого Git знает, но не следит за изменениями в нём. Этот статус — противоположность *tracked*, в который попадают все файлы, отслеживаемые Git.
