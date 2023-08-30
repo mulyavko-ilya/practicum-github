@@ -119,7 +119,7 @@ git log --oneline
       untracked -- git add --> staged + tracked;
       modified -- git add -->staged + tracked;
       staged + tracked -- git commit -->tracked;
-      C-->D;
+      tracked -->staged + tracked;
 ```
 
 
