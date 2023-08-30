@@ -61,6 +61,10 @@
 | Header      | Title       |
 | Paragraph   | Text        |
 
+## Изображение
+
+Image 	![alt text](image.jpg)
+
 Ссылки:
 [https://gist.github.com/fomvasss/8dd8cd7f88c67a4e3727f9d39224a84c](https://gist.github.com/fomvasss/8dd8cd7f88c67a4e3727f9d39224a84c)
 
