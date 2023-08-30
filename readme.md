@@ -1,2 +1,2 @@
 Hello
-It's first commit
+This is first commit
