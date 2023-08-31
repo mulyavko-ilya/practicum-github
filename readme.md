@@ -5,19 +5,24 @@
 2. Setting global settings
 Set name & e-mail
 
+```bash
 git config user.email "bob@example.com"
 git config user.name "Name Fullname"
-
+```
 
 ## Adding SSH key
+
 1. Generate key
 2. Adding key
 	- adding to github
 	- adding to sshagent
 3. Verify key
 
-### Generate
+### Generate SSH key
+
+```bash
 ssh-keygen -t ed25519 -C <e-mail>
+```
 
 Put private key to
 ~/.ssh/
@@ -25,13 +30,15 @@ Put private key to
 
 ### Adding to sshagent
 
+```bash
 # start the ssh-agent in the background
 $ eval "$(ssh-agent -s)"
 > Agent pid 59566
+```
 
-
+```bash
 ssh-add ~/.ssh/id_ed25519
-
+```
 
 [Ссылка на документацию:](https://docs.github.com/ru/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
@@ -86,7 +93,10 @@ git diff
 - Команда *git diff* сравнит последнюю закоммиченную версию файла с той, что находится в состоянии *modified*.
 - Команда *git diff --staged* покажет изменения в staged-файлах относительно последних закоммиченных версий.
 
-
+```bash
+git diff <коммит1> <коммит2>
+```
+С её помощью удобно сравнивать изменения в двух коммитах.
 
 
 ## Вывод лога
@@ -176,7 +186,12 @@ git restore <file>
 - Команда *git restore <file>* «откатит» изменения в файле до последней сохранённой (в коммите или в staging) версии.
 
 
+## Игнорирование файлов в Git
+
+[Ссылка на материал](/ignoring.md)
+
+
 
 ## Описание Markdown
 
-[Ссылка](/markdown.md)
+[Ссылка на описание](/markdown.md)
