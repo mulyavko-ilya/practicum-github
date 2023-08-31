@@ -46,7 +46,7 @@ ssh-add ~/.ssh/id_ed25519
 
 
 
-### Create repo
+### Инициализация репозитория
 
 #### Создание пустого репозитория
 ```bash
@@ -65,12 +65,20 @@ git clone
 git remote -v
 ```
 
-#### Привязать удалённый репозиторий к локальному - git remote add
+#### Синхронизация локального и удалённого репозиториев - git remote add
 
 ```bash
 cd ~/dev/first-project
 git remote add origin git@github.com:%ИМЯ_АККАУНТА%/first-project.git
 ```
+
+```bash
+git push -u origin main 
+```
+
+В первый раз загрузи все коммиты из локального репозитория в удалённый с названием origin.
+
+
 
 ## Добавление коммита
 1. Добавить файлы в stage-состояние
@@ -190,6 +198,10 @@ git restore <file>
 
 [Ссылка на материал](/ignoring.md)
 
+
+## Ветки в Git
+
+[Ссылка на описание](/branches.md)
 
 
 ## Описание Markdown
