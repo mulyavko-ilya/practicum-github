@@ -204,6 +204,11 @@ git restore <file>
 [Ссылка на описание](/branches.md)
 
 
+## Git Diff
+
+[Ссылка на описание](/diff.md)
+
+
 ## Описание Markdown
 
 [Ссылка на описание](/markdown.md)
